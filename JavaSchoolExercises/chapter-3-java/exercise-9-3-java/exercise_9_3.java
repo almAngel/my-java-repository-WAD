@@ -1,7 +1,7 @@
 /**
 *
 *
-* Exercise9x3.
+* Exercise_9_3.
 *
 * Make a program which calculates the volume of a cone.
 * 
@@ -14,7 +14,7 @@
 
 import java.util.Scanner; // Import Scanner.
 
-public class Exercise9x3 {
+public class exercise_9_3 {
   
   static final float Pi = 3.1415f; //Constant.
   

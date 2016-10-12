@@ -1,7 +1,7 @@
 /**
 *
 *
-* Exercise2x3.
+* Exercise_2_3.
 *
 * Make a euro-peseta converter, the values must be inserted with the keyboard.
 *
@@ -12,7 +12,7 @@
 
 import java.util.Scanner; // Import Scanner.
 
-public class Exercise2x3 {
+public class exercise_2_3 {
   public static void main (String[]args){
     
     Scanner s = new Scanner(System.in); // Calling Scanner.

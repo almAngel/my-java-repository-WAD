@@ -1,7 +1,7 @@
 /**
 *
 *
-* Exercise1x3.
+* Exercise_1_3.
 * 
 * Write a program which asks for two numbers, then multiply them and print the result.
 *
@@ -12,7 +12,7 @@
 
 import java.util.Scanner; // Importing Scanner.
 
-public class Exercise1x3 {
+public class exercise_1_3 {
   public static void main (String[]args) {
     
     Scanner s = new Scanner(System.in); // Calling Scanner.

@@ -1,7 +1,7 @@
 /**
 *
 *
-* Exercise6x3.
+* Exercise_6_3.
 *
 * Make a program which calculates the area of a triangle.
 * 
@@ -12,7 +12,7 @@
 
 import java.util.Scanner; // Import Scanner.
 
-public class Exercise6x3 {
+public class exercise_6_3 {
   public static void main (String[]args) {
     
     Scanner s = new Scanner(System.in); // Calling Scanner.
@@ -21,10 +21,10 @@ public class Exercise6x3 {
     
     System.out.println ("Triangle area calculator... ");
     
-    System.out.println ("Enter the base value ");
+    System.out.println ("Enter the base value: ");
     float base = Float.parseFloat (s.nextLine()); // Insert: base value.
     
-    System.out.println ("Enter the height ");
+    System.out.println ("Enter the height: ");
     float height = Float.parseFloat (s.nextLine()); // Insert: height value.
     
     float operation = (base * height)/2 ; // Operation.

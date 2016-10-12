@@ -1,7 +1,7 @@
 /**
 *
 *
-* Exercise5x3.
+* Exercise_5_3.
 *
 * Make a program which calculates the area of a rectangle.
 * 
@@ -12,7 +12,7 @@
 
 import java.util.Scanner; // Insert Scanner.
 
-public class Exercise5x3 {
+public class exercise_5_3 {
   public static void main (String[]args) {
     
     Scanner s = new Scanner(System.in); // Calling Scanner.

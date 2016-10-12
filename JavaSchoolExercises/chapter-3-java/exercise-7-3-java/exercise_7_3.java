@@ -1,7 +1,7 @@
 /**
 *
 *
-* Exercise7x3.
+* Exercise_7_3.
 *
 * Write a program which calculates the total value of a shop bill. Then add taxes to it.
 * 
@@ -12,7 +12,7 @@
 
 import java.util.Scanner; // Import Scanner.
 
-public class Exercise7x3 {
+public class exercise_7_3 {
   public static void main (String []args) {
     
     Scanner s = new Scanner (System.in); // Calling Scanner.

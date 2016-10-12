@@ -1,7 +1,7 @@
 /**
 *
 *
-* Exercise8x3.
+* Exercise_8_3.
 *
 * Write a program which calculates the salary of a employee, based in the worked hours.
 *
@@ -14,7 +14,7 @@
 
 import java.util.Scanner; // Import Scanner.
 
-public class Exercise8x3 {
+public class exercise_8_3 {
   public static void main (String[]args) {
     
     Scanner s = new Scanner(System.in); // Calling Scanner.

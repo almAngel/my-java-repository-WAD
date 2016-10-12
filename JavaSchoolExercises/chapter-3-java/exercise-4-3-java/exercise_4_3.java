@@ -1,7 +1,7 @@
 /**
 *
 *
-* Exercise4x3.
+* Exercise_4_3.
 *
 * Write a program with keyboard-input values. Then sum, subtract, multiply and divide them.
 * 
@@ -12,7 +12,7 @@
 
 import java.util.Scanner; // Import Scanner.
 
-public class Exercise4x3 {
+public class exercise_4_3 {
   public static void main (String[]args) {
     
     Scanner s = new Scanner(System.in); // Calling Scanner.

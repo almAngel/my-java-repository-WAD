@@ -1,7 +1,7 @@
 /**
 *
 *
-* Exercise12x3.
+* Exercise_12_3.
 *
 * Make a program which calculates the second exam's desired score of your 
 * Programming school subject, based on the first exam's score and the average 
@@ -14,7 +14,7 @@
 
 import java.util.Scanner; // Import Scanner library.
 
-public class Exercise12x3 {
+public class exercise_12_3 {
   public static void main (String[]args) {
     
     Scanner s = new Scanner (System.in); // Calling Scanner.

@@ -1,7 +1,7 @@
 /**
 *
 *
-* Exercise10x3.
+* Exercise_10_3.
 *
 * Make a mB to kB converter.
 *
@@ -14,7 +14,7 @@
 
 import java.util.Scanner; // Importing Scanner.
 
-public class Exercise10x3 {
+public class exercise_10_3 {
   public static void main (String[]args) {
     
     Scanner s = new Scanner(System.in); // Calling Scanner.
