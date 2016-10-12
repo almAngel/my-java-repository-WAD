@@ -4,12 +4,12 @@
 *Inverted Pyramid.
 *
 *
-*Ángel López Molina.
+* @author Ángel López Molina
 *
 *
 **/
 
-public class InvertedPyramid{
+public class exercise_8_1 {
   public static void main (String[]args){
     
     // Prints an inverted hollow pyramid. 

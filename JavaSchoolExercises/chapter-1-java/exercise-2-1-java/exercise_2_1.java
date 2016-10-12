@@ -3,12 +3,12 @@
 *It shows my name, adress and mobile phone.
 *
 *
-*Ángel López Molina
+* @author Ángel López Molina
 *
 *
 **/
 
-public class PersonalInfo {
+public class exercise_2_1 {
   public static void main (String [] args) {
 
     // Prints everything between brackets.

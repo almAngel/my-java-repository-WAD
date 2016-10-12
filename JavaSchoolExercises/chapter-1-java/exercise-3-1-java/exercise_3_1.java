@@ -3,13 +3,13 @@
 *It shows English words and their translation in Spanish.
 *
 *
-*Ángel López Molina.
+* @author Ángel López Molina.
 *
 *
 **/
 
 
-public class Translation {
+public class exercise_3_1 {
   public static void main (String [] args) {
   
     // Prints some Format and jump-line Strings.

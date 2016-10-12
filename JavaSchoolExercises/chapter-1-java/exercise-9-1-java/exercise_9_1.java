@@ -4,13 +4,14 @@
 *InanimatedObject.
 *
 *
-*Ángel López Molina.
+* @author Ángel López Molina
+*
 *
 *
 **/
 
 
-public class InanimatedObject { 
+public class exercise_9_1 { 
   public static void main (String[]args) {
   
     // Prints your prefered object.

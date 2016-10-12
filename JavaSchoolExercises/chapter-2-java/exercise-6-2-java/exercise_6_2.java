@@ -1,7 +1,7 @@
 /**
 *
 *
-* Exercise6x2.
+* Exercise_6_2.
 *
 * Write a program to calculate the total of a bill, and adds taxes to the base quantity.
 *
@@ -12,7 +12,7 @@
 
 import java.util.Scanner; // Import Scanner library.
 
-public class Exercise6x2 {
+public class exercise_6_2 {
   public static void main (String[]args){
     
     Scanner s = new Scanner(System.in); // Calling Scanner.

@@ -1,14 +1,14 @@
-/*
+/**
 *
-*Se muestra mi nombre por pantalla.
+* Se muestra mi nombre por pantalla.
 *
 *
-*Ángel López Molina
+* @author Ángel López Molina
 *
 */
 
 
-public class Name {
+public class exercise_1_1 {
   public static void main (String [] args){
 
     System.out.print ("Your Name is Ángel López Molina\n"); // Prints the text inside the brackets.

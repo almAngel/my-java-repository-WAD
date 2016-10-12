@@ -1,7 +1,7 @@
 /**
 *
 *
-* Exercise3x2.
+* Exercise_3_2.
 *
 * Create some variables (complete name, adress, phone number) and assign them their value.
 *
@@ -10,7 +10,7 @@
 *
 **/
 
-public class Exercise3x2 {
+public class exercise_3_2 {
   public static void main (String[]args) {
     
     //Vars.

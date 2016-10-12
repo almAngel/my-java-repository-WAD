@@ -1,7 +1,7 @@
 /**
 *
 *
-* Exercise2x2. 
+* Exercise_2_2. 
 *
 * Create a variable and assign your entire name to it.
 * 
@@ -11,7 +11,7 @@
 *
 **/
 
-public class Exercise2x2 {
+public class exercise_2_2 {
   public static void main (String[]args){
     
     //Vars.

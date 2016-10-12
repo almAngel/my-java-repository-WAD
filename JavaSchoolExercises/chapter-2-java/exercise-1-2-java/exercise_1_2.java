@@ -10,7 +10,7 @@
 *
 **/
 
-public class Exercise1x2 {
+public class exercise_1_2 {
   public static void main (String [] args) {
   
   // Vars.

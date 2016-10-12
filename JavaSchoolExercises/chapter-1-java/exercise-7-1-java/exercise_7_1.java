@@ -4,11 +4,11 @@
 *Empty Pyramid.
 *
 *
-*Ángel López Molina.
+* @author Ángel López Molina
 *
 **/
 
-public class EmptyPyramid  {
+public class exercise_7_1 {
   public static void main (String[]args) {
   
     // Prints a hollow pyramid.

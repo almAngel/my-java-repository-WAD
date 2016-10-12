@@ -1,7 +1,7 @@
 /**
 *
 *
-* Exercise4x2.
+* Exercise_4_2.
 * 
 * Make a peseta-euro converter.
 *
@@ -13,7 +13,7 @@
 
 import java.util.Scanner; // Import Scanner library.
 
-public class Exercise4x2 {
+public class exercise_4_2 {
   public static void main (String[]args){
     
     Scanner s = new Scanner(System.in); // Calling Scanner.

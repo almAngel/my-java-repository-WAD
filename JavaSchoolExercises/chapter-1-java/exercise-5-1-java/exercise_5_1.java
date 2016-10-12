@@ -5,11 +5,11 @@
 *
 *
 *
-*Ángel López Molina.
+* @author Ángel López Molina.
 *
 **/
 
-public class ColoredSchedule {
+public class exercise_5_1 {
   public static void main (String [] args) {
     
     // Variables. They can change along the code.
