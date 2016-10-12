@@ -1,8 +1,7 @@
-package Chapter4.Exercise4x4;
 
 /**
  * 
- * Exercise 4x4.
+ * Exercise_4_4.
  * 
  * Make a salary calculator. Keep in mind that below 40 hours of work are paid for 12€/h.
  * Above 40 hours are paid 16€/h.
@@ -16,11 +15,11 @@ package Chapter4.Exercise4x4;
 
 import java.util.Scanner; // Import the Scanner library.
 
-public class Exercise4x4 {
+public class exercise_4_4 {
 	
 public static Scanner s = new Scanner(System.in); // Calling the Scanner.
 	
-	//Variables.
+	//Variables. I stored them in a new class.
 	
 	private static class Vars{
 		
@@ -60,14 +59,14 @@ public static Scanner s = new Scanner(System.in); // Calling the Scanner.
 			
 			if (Vars.hours > 40f) { // If hours > 40 then extraHours are multiplied by the > 40h salary. 
 				
-			System.out.println ("Oh, it seems you work more than 40 hours. Enter the number of extra hours...");
-			System.out.println ("Then, extra hours' salary will sum with your normal 8 hours salary...");
+			System.out.println ("Oh, it seems you work more than 40 hours/week. Enter the number of extra hours...");
+			System.out.println ("Then, extra hours' salary will sum with your normal 40 hours/week salary...");
 			
 			Vars.extraHours = Float.parseFloat(s.nextLine()); // Insert: extraHours value.
 			
-			Vars.operation2 = (Vars.extraHours* Vars.salary2); // Operation.
+			Vars.operation2 = (Vars.extraHours* Vars.salary2) + 480f; // Operation.
 			
-			System.out.printf("Result: %.2f %s \n",Vars.operation2 + 480f, "€"); // Print hours > 40 result.
+			System.out.printf("Result: %.2f %s \n",Vars.operation2, "€"); // Print hours > 40 result.
 			}
 			
 			else if (Vars.hours < 40f){ // If hours < 40 then hours are multiplied by the < 40 salary.

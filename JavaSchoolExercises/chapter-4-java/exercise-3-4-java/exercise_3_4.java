@@ -1,9 +1,18 @@
-package Chapter4.Exercise3x4;
-
 
 import java.util.Scanner; //Call the Scanner library.
 
-public class Exercise3x4 {
+/**
+ * 
+ * Write a program that, introducing a number it tells you 
+ * which day of the week is it. Ex: 1 = Monday.
+ * 
+ * 
+ * 
+ * @author Ángel López Molina 
+ * 
+ */
+
+public class exercise_3_4 {
 
 	public static void main (String[]args) {
 		
@@ -23,43 +32,43 @@ public class Exercise3x4 {
 		
 		case 1: 
 			
-			System.out.println ("Monday");
+			System.out.printf ("The day %s is: Monday",day);
 			
 			break;
 			
 		case 2: 
 			
-			System.out.println ("Tuesday");
+			System.out.printf ("The day %s is : Tuesday",day);
 		
 			break;
 			
 		case 3:	
 		
-			System.out.println ("Wednesday");
+			System.out.printf ("The day %s is: Wednesday",day);
 			
 			break;
 			
 		case 4:
 			
-			System.out.println ("Thursday");
+			System.out.printf ("The day %s is: Thursday",day);
 			
 			break;
 			
 		case 5:
 			
-			System.out.println ("Friday");
+			System.out.printf ("The day %s is: Friday",day);
 			
 			break;
 			
 		case 6:
 			
-			System.out.println ("Saturday");
+			System.out.printf ("The day %s is: Saturday",day);
 			
 			break;
 			
 		case 7:
 			
-			System.out.println ("Sunday");
+			System.out.printf ("The day %s is: Sunday",day);
 			
 			break;
 			

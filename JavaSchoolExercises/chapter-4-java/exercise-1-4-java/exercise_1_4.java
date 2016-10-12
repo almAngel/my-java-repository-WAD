@@ -1,10 +1,8 @@
-package Chapter4.Exercise1x4;
-
 
 /**
  * 
  * 
- * Exercise1x4.
+ * Exercise_1_4.
  * 
  * It gives you the schedule of each day of the week.
  * Check out the code for more information. 
@@ -16,7 +14,7 @@ package Chapter4.Exercise1x4;
 
 import java.util.Scanner; //Imported lib for the Scanner.
 
-public class Exercise1x4 {
+public class exercise_1_4 {
 
 	public static void main (String[]args) {
 		
@@ -26,7 +24,7 @@ public class Exercise1x4 {
 		
 		//Strings for the user information.
 		
-		System.out.println ("What is the schedule of the day?... ");
+		System.out.println ("Which is the schedule of the day?... ");
 		
 		System.out.println ("1. Monday");
 		System.out.println ("2. Tuesday");
@@ -86,7 +84,7 @@ public class Exercise1x4 {
 				System.out.printf ("%-15s %s \n","13:45 - 14:45","E.D");
 				
 				
-					break;
+        break;
 				
 			case "Thursday": 
 					
@@ -101,7 +99,7 @@ public class Exercise1x4 {
 				System.out.printf ("%-15s %s \n","13:45 - 14:45","PROG");
 					
 				
-					break;
+        break;
 					
 			case "Friday": 
 					
@@ -116,14 +114,14 @@ public class Exercise1x4 {
 				System.out.printf ("%-15s %s \n","13:45 - 14:45","S.INF");
 					
 				
-					break;
+        break;
 				
 			//Default. If not -case x- then do something alternatively.
 					
 			default:  
 				System.out.println ("You didn't introduce a valid day of the week");
 		
-					break;
+        break;
 		}
 	}
 }

@@ -1,10 +1,11 @@
-package chapter_4_java.pack;
 
 /**
  * 
+ * 1st grade equation resolver.
+ * 
  * @author angel
  *
- * AAEAS
+ * 
  */
 
 import java.util.Scanner;
@@ -16,7 +17,7 @@ public class exercise_5_4 {
 		Scanner s = new Scanner (System.in);
 		
 		System.out.println ("1st grade equation resolver...");
-		System.out.println ("Enter the value of a & b to resolve x= ax + b: ");
+		System.out.println ("Enter the value of a & b to resolve ax + b = 0: ");
 		
 		//Vars | Enter the value w/ keyboard.
 		
@@ -24,9 +25,9 @@ public class exercise_5_4 {
 		float b = Float.parseFloat (s.nextLine());
 		
 		
-		float operacion = -(-b)/-(a);
+		float operation = -(-b)/-(a); //Operation.
 		
-		System.out.println ("Result: " + operacion );
+		System.out.println ("Result: " + operation ); // Print operation
 		
 		
 	}

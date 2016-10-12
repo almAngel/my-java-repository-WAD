@@ -1,8 +1,7 @@
-package Chapter4.Exercise2x4;
 
 /**
  * 
- *Exercise2x4.
+ *Exercise_2_4.
  *
  *It says something depending of the hour introduced.
  *Check out the code for more information.
@@ -15,7 +14,7 @@ package Chapter4.Exercise2x4;
 
 import java.util.Scanner; //Import Scanner lib.
 
-public class Exercise2x4 {
+public class exercise_2_4 {
 
 	public static void main (String[]args) {
 		
@@ -37,7 +36,7 @@ public class Exercise2x4 {
 		if (user.equals("Ángel")) {
 			
 		System.out.printf ("¡Hello %s! what time is it?... \n",user);
-		System.out.println ("Enter the current hour... (format:| 6 -> 12 -> 20 -> 30 - Valid float values ex: 10.30)");
+		System.out.println ("Enter the current hour... ");
 		
 		float hour = Float.parseFloat(s.nextLine());
 		
