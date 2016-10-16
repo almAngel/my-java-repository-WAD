@@ -50,7 +50,7 @@ public class exercise_11_4 {
   
             int totalTimeInSecsDifference = 86400 - hoursAndMinsSum;  // To know the time difference, we need to suubtract both values (24h in seconds less introduced time).
     
-            System.out.println("Time missing in seconds: " + totalTimeInSecsDifference + " secs"); // Print values (Result in seconds).
+            System.out.println("Time missing in seconds: " + totalTimeInSecsDifference + " secs."); // Print values (Result in seconds).
     
           }else{ // If not, its because hour is equal to 24h ( x = 24h ).
   
@@ -70,7 +70,7 @@ public class exercise_11_4 {
       
                 int minsDifference = 60 - minsInSecondsToMins; // Calcualating minutes missing.
      
-                System.out.println ("Time missing in XX:XX format: " + hoursDifferenceInMinsToHours + ":" + minsDifference);
+                System.out.println ("Time missing in XX:XX format: " + hoursDifferenceInMinsToHours + "h" + ":" + minsDifference + "m" );
           
 /*-4*/        }else {System.out.println("Introduce a valid minute value, please...");} // If not a valid minutes value, then:
      
