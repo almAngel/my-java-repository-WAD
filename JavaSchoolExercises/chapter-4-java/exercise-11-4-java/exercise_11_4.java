@@ -46,24 +46,24 @@ public class exercise_11_4 {
   
         int hoursAndMinsSum = hoursToSeconds + minsToSeconds; // When mins and hours are in seconds format, we sum both values.
   
-/*2*/     if (hoursAndMinsSum < 72000) { // If the sum (hours + mins), already converted to seconds is minor than 72000 (20h in seconds), then it keeps running.
+/*2*/     if (hoursAndMinsSum < 86400) { // If the sum (hours + mins), already converted to seconds is minor than 86400 (24h in seconds), then it keeps running.
   
-            int totalTimeInSecsDifference = 72000 - hoursAndMinsSum;  // To know the time difference, we need to suubtract both values (20h in seconds less introduced time).
+            int totalTimeInSecsDifference = 86400 - hoursAndMinsSum;  // To know the time difference, we need to suubtract both values (24h in seconds less introduced time).
     
             System.out.println("Time missing in seconds: " + totalTimeInSecsDifference + " secs"); // Print values (Result in seconds).
     
-          }else{ // If not, its because hour is higher or equal to 20, and less or equal than 24h ( 20 >= x <= 24 ).
+          }else{ // If not, its because hour is equal to 24h ( x = 24h ).
   
             System.out.println("It's Midnight");
   
 /*-2*/     }
   
-  int hoursInSecondsToMins = hoursToSeconds/60; // Hours , converted to seconds before, back to mins.
-  int minsInSecondsToMins = minsToSeconds/60; // Mins , before in seconds, converted to mins.
+        int hoursInSecondsToMins = hoursToSeconds/60; // Hours , converted to seconds before, back to mins.
+        int minsInSecondsToMins = minsToSeconds/60; // Mins , before in seconds, converted to mins.
    
-/*3*/     if (hoursInSecondsToMins < 1200) { // If hours (converted from seconds to minutes) is less than 20h (1200 mins), then:
+/*3*/     if (hoursInSecondsToMins < 1440) { // If hours (converted from seconds to minutes) is less than 24h (1440 mins), then:
   
-            int hoursDifference = 1200 - hoursInSecondsToMins; // The difference between midnight hour (20h in minutes) less introduced hour (comparing in minutes). 
+            int hoursDifference = 1440 - hoursInSecondsToMins; // The difference between midnight hour (24h in minutes) less introduced hour (comparing in minutes). 
             int hoursDifferenceInMinsToHours = hoursDifference/60; // The minutes, before in seconds, back to minutes format.
       
 /*4*/         if (minsInSecondsToMins <= 60){ // If minutes are equal or less than 60, then:
