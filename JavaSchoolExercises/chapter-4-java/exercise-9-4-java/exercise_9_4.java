@@ -31,16 +31,15 @@ public class exercise_9_4 {
     System.out.println ("Introduce the c value: "); 
     double cValue = Double.parseDouble(s.nextLine()); // Introduce c value.
     
-    
     // The things inside the Square Root.
     
-    double sqRoot = Math.sqrt((bValue*bValue) - 4f* ( (-(aValue)) * (-(cValue)) )) ; 
+    double sqRoot = Math.sqrt((bValue*bValue) - 4f* ( (aValue) * (cValue)) ) ; 
     
     // Splits because you need to find both values.
     
-    double x1Value = ((-(bValue)) + sqRoot)/ (aValue*2f); // -b + ..../2a
+    double x1Value = ((-(bValue)) + sqRoot)/ (aValue*2f); // (-b + ....)/2a
     
-    double x2Value = ((-(bValue)) - sqRoot)/ (aValue*2f); // -b - ..../2a
+    double x2Value = ((-(bValue)) - sqRoot)/ (aValue*2f); // (-b - ....)/2a
     
     System.out.printf ("Result: %s %.5f %s %.5f \n","x1= ",x1Value,"x2= ",x2Value);
     
