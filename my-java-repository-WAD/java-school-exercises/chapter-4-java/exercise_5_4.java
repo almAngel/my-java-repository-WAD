@@ -25,7 +25,7 @@ public class exercise_5_4 {
 		float b = Float.parseFloat (s.nextLine());
 		
 		
-		float operation = -(-b)/-(a); //Operation.
+		float operation = (-b)/(a); //Operation.
 		
 		System.out.println ("Result: " + operation ); // Print operation
 		
