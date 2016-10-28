@@ -16,6 +16,7 @@ public class exercise_7_5 {
     //User info.
     
     System.out.println ("Safe-deposit box");
+    //boolean fix = false;
     
     //If the condition doesn't match, then it starts again.
     for (int attempt = 1; attempt <= 4; attempt++){
@@ -51,7 +52,7 @@ public class exercise_7_5 {
              
                 break;
               }
-              else if (yesNo.equalsIgnoreCase("N")){System.out.println ("As you please.");
+              else if (yesNo.equalsIgnoreCase("N")){System.out.println ("As you please. Attempt " + attempt + " of 4");
                 break;
               }
               else {System.out.println ("Invalid answer.");}
@@ -60,7 +61,7 @@ public class exercise_7_5 {
         else{System.out.println ("Invalid number, please enter a four digits number. Attempt " + attempt + " of 4");}//If the number has more than 4 digits or it's below 0.
          }
       else { 
-      
+        
         System.out.println ("Correct, you can check your financial status.");
       
         break;
