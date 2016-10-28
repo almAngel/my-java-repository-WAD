@@ -30,28 +30,35 @@ public class exercise_7_5 {
           
           System.out.println ("Invalid password, please enter a valid number combination. Attempt " + attempt + " of 4");
           
-          System.out.println ("Do you want some hints?[Y/N]");//User info++.Asking for hints.
-          String yesNo = s.nextLine();
-          
-            if (yesNo.equalsIgnoreCase("y")){
+          for (int iterate = 0; iterate < 1; iterate--){
             
-              if (number/1000 == 5){System.out.println ("The first number is correct.");}
-              else {System.out.println ("Hint: The first number is the result of (900/45)/4");}
+            System.out.println ("Do you want some hints?[Y/N]");//User info++.Asking for hints.
+            String yesNo = s.nextLine(); // Enter
+            
+              if (yesNo.equalsIgnoreCase("Y")){
+            
+                if (number/1000 == 5){System.out.println ("The first number is correct.");}
+                else {System.out.println ("Hint: The first number is the result of (900/45)/4");}
               
-              if ((number/100)%10 == 6){System.out.println ("The second digit is correct.");}
-              else{System.out.println ("Hint: The second number's value is 6.");}
+                if ((number/100)%10 == 6){System.out.println ("The second digit is correct.");}
+                else{System.out.println ("Hint: The second number's value is 6.");}
               
-              if ((number/10)%10 == 0){System.out.println ("The penultimate number is correct.");}
-              else {System.out.println ("Hint: The penultimate number's value is nothing.");}
+                if ((number/10)%10 == 0){System.out.println ("The penultimate number is correct.");}
+                else {System.out.println ("Hint: The penultimate number's value is nothing.");}
               
-              if (number%10 == 3){System.out.println("The last digit is correct.");}
-              else{System.out.println("Hint: The last digit is the result of= 9 MOD 6");}
+                if (number%10 == 3){System.out.println("The last digit is correct.");}
+                else{System.out.println("Hint: The last digit is the result of= 9 MOD 6");}
              
-            }
-            else {System.out.println ("As you please.");}
-          
-        }else{System.out.println ("Invalid number, please enter a four digits number.");}//If the number has more than 4 digits or it's below 0.
-      }
+                break;
+              }
+              else if (yesNo.equalsIgnoreCase("N")){System.out.println ("As you please.");
+                break;
+              }
+              else {System.out.println ("Invalid answer.");}
+          }
+        }
+        else{System.out.println ("Invalid number, please enter a four digits number.");}//If the number has more than 4 digits or it's below 0.
+         }
       else { 
       
         System.out.println ("Correct, you can check your financial status.");
