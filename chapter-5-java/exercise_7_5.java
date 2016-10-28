@@ -35,7 +35,7 @@ public class exercise_7_5 {
             System.out.println ("Do you want some hints?[Y/N]");//User info++.Asking for hints.
             String yesNo = s.nextLine(); // Enter
             
-              if (yesNo.equalsIgnoreCase("Y")){
+              if (yesNo.equalsIgnoreCase("Y")){ //If that's true, then:
             
                 if (number/1000 == 5){System.out.println ("The first number is correct.");}
                 else {System.out.println ("Hint: The first number is the result of (900/45)/4");}
@@ -57,7 +57,7 @@ public class exercise_7_5 {
               else {System.out.println ("Invalid answer.");}
           }
         }
-        else{System.out.println ("Invalid number, please enter a four digits number.");}//If the number has more than 4 digits or it's below 0.
+        else{System.out.println ("Invalid number, please enter a four digits number. Attempt " + attempt + " of 4");}//If the number has more than 4 digits or it's below 0.
          }
       else { 
       
