@@ -13,49 +13,42 @@ public class exercise_8_5 {
   
     Scanner s = new Scanner (System.in); //Call Scanner.
     
-    int step= 0;
+    boolean repeat= true;
     
-    if (step==0){
-      System.out.println("Introduce a number: ");
-      int number = Integer.parseInt(s.nextLine());
-      System.out.println("");
-      int iter= 0;
-      
-      for (iter= 0; iter <= 10; iter++){
- 
+      while (repeat){//While repeat condition is true, then:
+       
+        boolean repeat2= true;
+        int number; 
+        
+        System.out.println("Introduce a number: ");
+        number = Integer.parseInt(s.nextLine());
+        System.out.println("");
+        
+        for (int iter=0; iter <= 10; iter++){//It iterates 10 times and miltiplies the iter state value by the number.
+        
           int operation= number*iter;
           System.out.println(operation);
-
-          if (iter == 10){
-            step++;
-            System.out.println("step: "+step);
-          }
-      }
-      
-      iter-=11;
-      System.out.println("iter:"+iter);
-    }
-    if (step ==1){
-    
-        System.out.println ("END\n");  
-        System.out.println ("Repeat? [Y/N]\n");
-        String choice = s.nextLine();
-    
-        if (choice.equalsIgnoreCase("y")){    
-          step-=1;
-          System.out.println("step:"+step);
         }
-        else if (choice.equalsIgnoreCase("n")){
-          step+=1;
-          System.out.println("Execution finished succesfully.");
-          System.out.println("step:"+step);
-        }
+        
+        while(repeat2){//While repeat2 is true, then:
           
+          System.out.println("Repeat? [Y/N]");
+          String choice= s.nextLine();
+          
+          if(choice.equalsIgnoreCase("y")){
+            repeat2= false;
+          }
+          else if (choice.equalsIgnoreCase("n")){
+            repeat= false;
+            repeat2= false;
+          } 
+          else{
+            System.out.println("Introduce a valid answer.");
+          }
+        }
       }
-    
-      
+        
   }
-    
-    
-}    
+}  
+  
 
