@@ -1,11 +1,11 @@
 /**
  *
- * exercise_3_5
+ * Exercise_03_5
  * 
  * @author Ángel López Molina
  */
 
-public class exercise_3_5 {
+public class Exercise_03_5 {
   public static void main (String[]args) {
   
     //Var.

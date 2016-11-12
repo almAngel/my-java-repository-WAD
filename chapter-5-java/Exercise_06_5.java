@@ -1,11 +1,11 @@
 /**
  *
- * exercise_6_5
+ * Exercise_06_5
  * 
  * @author Ángel López Molina
  */
 
-public class exercise_6_5 {
+public class Exercise_06_5 {
   public static void main (String[]args){
   
     int number = 320;

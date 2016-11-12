@@ -1,11 +1,11 @@
 /**
  *
- * exercise_2_5
+ * Exercise_02_5
  * 
  * @author Ángel López Molina
  */
 
-public class exercise_2_5 {
+public class Exercise_02_5 {
   public static void main (String[]args){
   
     int number = 0;

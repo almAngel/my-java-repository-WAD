@@ -3,12 +3,12 @@ import java.util.Scanner;
 
 /**
  *
- * exercise_7_5
+ * Exercise_07_5
  * 
  * @author Ángel López Molina
  */
 
-public class exercise_7_5 {
+public class Exercise_07_5 {
   public static void main (String[]args){
   
     Scanner s = new Scanner (System.in); //Calls the scanner.

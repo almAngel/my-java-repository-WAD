@@ -1,11 +1,11 @@
 /**
  *
- * exercise_1_5
+ * Exercise_01_5
  * 
  * @author Ángel López Molina
  */
 
-public class exercise_1_5 {
+public class Exercise_01_5 {
   public static void main (String[]args){
 
         //Initialize;    Compare;       Do. 

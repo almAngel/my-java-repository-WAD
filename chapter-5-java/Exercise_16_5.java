@@ -6,7 +6,7 @@ import java.util.Scanner;
  * @author Ángel López Molina
  */
 
-public class exercise_16_5 {
+public class Exercise_16_5 {
   public static void main(String[]args){
     Scanner s = new Scanner(System.in);
     boolean repeat= true;
