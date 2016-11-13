@@ -29,7 +29,6 @@ public class Exercise_32_5 {
     }
 
     for(int i =1;i<= length; i++){
-      //What is a digit?:
       digit= (int)flipped%10; 
     
       //###### CHECK IF THE DIGITS ARE A PAIR NUMBER ######
