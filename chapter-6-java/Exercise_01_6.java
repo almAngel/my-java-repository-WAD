@@ -4,7 +4,7 @@
  *
  * @author Ángel López Molina
  */
-public class Exercise_1_6 {
+public class Exercise_01_6 {
   public static void main(String[] args) {
     
     int sum= 0;
