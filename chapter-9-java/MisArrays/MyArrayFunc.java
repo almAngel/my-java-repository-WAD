@@ -8,13 +8,13 @@ public class MyArrayFunc {
     return a;
   }
   
-  public static int[] arrayIntGen (int s, int min, int max){
+  public static int[] randArray (int s, int min, int max){
     int n= 0;
     
     int[] ran= new int [s];
     
     for (int i = 0; i < ran.length; i++) {
-      n= (int)(Math.random()*max)+min;
+      n= (int)(Math.random()*(max-min)+1)+min;
       ran[i]= n;
     }
     
@@ -104,7 +104,6 @@ public class MyArrayFunc {
   
   public static int[] rotateArrayLeft (int n[]){
     int aux= n[0];
-    int[] m= new int [n.length];
     
     for (int i = 0 ; i < n.length-1; i++) { //Juntar los numeros del array en uno solo.
       n[i]= n[i+1];
@@ -113,4 +112,5 @@ public class MyArrayFunc {
     
     return n;
   }
+  
 }
