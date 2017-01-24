@@ -73,5 +73,44 @@ public class MyArrayFunc {
     return pos;
   }
   
+  public static int[] flipArray (int n[]){
+    int flip= 0;
+    int[] m= new int [n.length];
+    int d= 0;
+    int count= 0;
+    
+    for (int i = 0; i < n.length; i++) { //Juntar los numeros del array en uno solo.
+      flip= (flip*10)+ n[i];
+    }   
+    while (flip > 0 && count < m.length){ //Meter numeros en el otro array.
+      d= flip%10;
+      m[count]= d;
+      count++;
+      flip/= 10;
+    }
+    return m;
+  }
+//=======================================================================================  
+  public static int[] rotateArrayRight (int n[]){
+    int aux= n[n.length-1];
+    
+    for (int i = n.length-1 ; i > 0; i--) { //Juntar los numeros del array en uno solo.
+      n[i]= n[i-1];
+    }
+    n[0]=aux;
+    
+    return n;
+  }
   
+  public static int[] rotateArrayLeft (int n[]){
+    int aux= n[0];
+    int[] m= new int [n.length];
+    
+    for (int i = 0 ; i < n.length-1; i++) { //Juntar los numeros del array en uno solo.
+      n[i]= n[i+1];
+    }
+    n[n.length-1]=aux;
+    
+    return n;
+  }
 }
