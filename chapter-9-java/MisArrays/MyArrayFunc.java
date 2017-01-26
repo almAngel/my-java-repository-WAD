@@ -1,5 +1,7 @@
 package MisArrays;
 
+import MisFunciones.CMaths;
+
 public class MyArrayFunc {
 
   public static int[] createArrayN (int n, int s){
@@ -112,5 +114,70 @@ public class MyArrayFunc {
     
     return n;
   }
+  
+  /*public static int[] primeFilter (int[] n){
+    int aux= 0;
+    int[] m= new int[n.length];
+    for (int i = 0; i < n.length; i++) {
+      if(MyFunctions.prime(n[i])){
+        aux= n[i];
+      }
+      m[i]= aux;
+    }
+    return m;
+  }*/
+  
+  public static int[] converToArray (long n){
+    long x= 0;
+    int[] a= new int[CMaths.countDigits(n)];
+    
+    for (int i = a.length-1; i > 0; i--){
+      x= n%10;
+      a[i]= (int)x;
+      n/= 10;
+    }
+    return a;
+  }
+  
+  public static long converToNumber (int n[]){
+    long aux= 0;
+    
+    for (int i = 0; i < n.length; i++){
+      aux= (aux*10)+ n[i];
+    }
+    return aux;
+  }
+  
+  public static int[] primeFilter (int n[]){
+    int x= 0;
+    //int[] a= new int [n.length];
+    int count= 0;
+    long aux= 0;
+    int[] a= new int [1];
+    
+    for (int i = 0; i < n.length; i++){
+      x= n[i];
+      if(CMaths.prime(n[i])){
+        count++;
+        aux= (aux*10)+ x;
+      }
+    }
+    
+    if(count > 0){
+      int[] b= new int[count];
+      for (int i = b.length-1; i >= 0; i--) {
+        b[i]= (int)aux%10;
+        aux/= 10;
+      }
+      return b;
+    }
+    else{
+      a[0]= -1;
+    }
+    
+    return a;
+  }
+  
+  
   
 }
