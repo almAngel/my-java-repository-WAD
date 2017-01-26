@@ -128,12 +128,13 @@ public class MyArrayFunc {
   }*/
   
   public static int[] converToArray (long n){
-    long x= 0;
+    int x= 0;
     int[] a= new int[CMaths.countDigits(n)];
     
-    for (int i = a.length-1; i > 0; i--){
-      x= n%10;
-      a[i]= (int)x;
+    for (int i = a.length-1; i >= 0; i--){
+      x= (int)n%10;
+      
+      a[i]= x;
       n/= 10;
     }
     return a;
@@ -178,6 +179,23 @@ public class MyArrayFunc {
     return a;
   }
   
-  
+  public static int[] capicuaFilter (int n[]){
+    int x= 0;
+    int count= 0;
+    int aux= 0;
+    int[] a= new int [1];
+    //int digits= 0;
+    
+    for (int i = 0; i < n.length; i++) {
+      x= n[i];
+      
+      if(CMaths.capicua(x)){
+        count++;
+       
+      }
+    }
+    return a;
+    
+  }
   
 }

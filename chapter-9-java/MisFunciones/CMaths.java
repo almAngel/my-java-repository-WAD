@@ -1,6 +1,8 @@
 
 package MisFunciones;
 
+import MisArrays.MyArrayFunc;
+
 /**
  *
  * @author Angel
@@ -249,55 +251,38 @@ public class CMaths {
   public static String numberToMorseSys (long n){
     String t= "";
     String tAux= "";
-    boolean zeroLastD= false;
-    long aux= 0;
-    int hBar= 0;
-    int dot= 0;
+    int x= 0;
+    int maxDot= 0;
+    int maxLine= 0;
     
-    if(n%10==0){ 
-      tAux= " - - - - -";
-      zeroLastD= true;
-    }
-      
-    n= flip(n);
+    int[] a= MyArrayFunc.converToArray(n);
     
-    while (n > 0){
-      aux= n%10;
-      n/=10;
-      hBar= 5;
-      dot= 5;
+    for (int i = 0; i < a.length; i++) {
+      maxDot= 5;
+      maxLine= 5;
+      x= a[i];
       
-      if (aux > 0 && aux <= 5){
-        
-        for (int i = 0; i < aux; i++) {
+      if(x >= 0 && x <= 5){
+        for (int j = 0; j < x; j++) {
           t+= " ·";
         }
-        hBar-=aux;
-        for (int i = 0; i < hBar; i++) {
+        maxLine-= x;
+        for (int j = 0; j < maxLine; j++) {
+          t+= " -";
+        }   
+      }
+      else if (x > 5 && x < 10){
+        x-= 5;
+        for (int j = 0; j < x; j++) {
           t+= " -";
         }
-      }
-       
-      if ((aux > 5 && aux < 9)|| aux == 0){
-        aux-= 5;
-        
-        if(aux < 0) aux*=-1;
-        for (int i = 0; i < aux; i++) {
-          t+= " -";
+        maxDot-= x;
+        for (int j = 0; j < maxDot; j++) {
+          t+= " ·";
         }
-        dot-= aux;
-        for (int i = 0; i < dot; i++) {
-          t+= " .";
-        }
-      }
+      } 
       t+= " ||";
-      
-    }
-    
-    if(zeroLastD){
-      t+= tAux;
-    }
-    
+    } 
     return t;
   }
   
