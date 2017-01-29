@@ -1,0 +1,125 @@
+1.¿Cuáles serían los atributos de la clase PilotoDeFormula1? ¿Se te ocurren algunas
+instancias de esta clase?
+
+-El nombre.
+-La edad.
+-La Altura.
+-El equipo (o marca de coche).
+-El color del traje.
+-El genero.
+
+Instancias: 
+
+-PilotoFerrari.
+-PilotoRenault.
+-PilotoMercedes.
+
+2.A continuación tienes una lista en la que están mezcladas varias clases con
+instancias de esas clases. Para ponerlo un poco más difícil, todos los elementos
+están escritos en minúscula. Di cuáles son las clases, cuáles las instancias,
+a qué clase pertenece cada una de estas instancias y cuál es la jerarquía
+entre las clases: paula, goofy, gardfiel, perro, mineral, caballo, tom, silvestre,
+pirita, rocinante, milu, snoopy, gato, pluto, animal, javier, bucefalo, pegaso,
+ayudante_de_santa_claus, cuarzo, laika, persona, pato_lucas.
+
+-Clase Persona: 
+·Paula
+·Javier
+
+-Clase Personaje_Conocido:
+·Goofy
+·Garfield
+·Tom
+·Silvestre
+·Rocinante
+·Milu
+·Snoopy
+·Pluto
+·Bucefalo
+·Pegaso
+·Ayudante_de_santa_claus
+·Laika
+·Pato_lucas
+
+-Clase Animal:
+·Perro
+·Caballo
+·Gato
+
+-Clase Mineral:
+·Pirita
+·Cuarzo
+
+3.¿Cuáles serían los atributos de la clase Vivienda? ¿Qué subclases se te ocurren?
+
+-ancho
+-largo
+-alto
+-areaTotal
+-electricidad (bool)
+-agua (bool)
+-dormitorios
+-baños
+-cocinas
+-salas_de_estar
+-seguridad (bool)
+
+4.Piensa en la liga de baloncesto, ¿qué 5 clases se te ocurren para representar
+5 elementos distintos que intervengan en la liga?
+
+-Clase Arbitro
+-Clase Jugador:
+·Base
+·Pivot
+·Escolta
+·Alero
+·Ala-Pivot
+
+-Clase Personal_Mantenimiento
+-Clase Entrenador
+-Clase Público
+-Clase Pelota
+
+5.Haz una lista con los atributos que podría tener la clase caballo. A continuación
+haz una lista con los posibles métodos (acciones asociadas a los caballos).
+
+-altura
+-color/es
+-raza
+-crin
+-tipo_pelo
+-genero
+
+6.Lista los atributos de la clase Alumno ¿Sería nombre uno de los atributos de la
+clase? Razona tu respuesta.
+
+-apellidos
+-numero_lista
+-altura
+-edad
+-numero_mesa
+
+Nombre no sería un atributo válido por si solo porque no podríamos identificar fácilmente 
+al alumno si este mismo se repite.No obstante lo podemos poner junto al atributo apellidos
+para diferenciarlo de otro objeto.
+
+7.¿Cuáles serían los atributos de la clase Ventana (de ordenador)? ¿cuáles serían
+los métodos? Piensa en las propiedades y en el comportamiento de una
+ventana de cualquier programa.
+
+-Atributos:
+  ·ancho
+  ·alto
+  ·reescalable (bool)
+  ·cerrable
+
+-Métodos:
+  ·posicion_inicial
+  ·actualizar_posicion
+  ·cerrar
+  ·minimizar
+  ·maximizar (resolucionX · resolucionY)
+  ·boton de x (x= Lo que sea)
+
+
+
