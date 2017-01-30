@@ -1,14 +1,17 @@
+package Exercise_01_10;
 
 
-public class Exercise_01_10 {
+public class Horse {
 
   public float height, weight;
   private String name, gender;
   public String color, hair;
   public int age;
+  public int x;
+  public int z;
   
   //### CONSTRUCTOR ###
-  Exercise_01_10 (String n,String g){ 
+  Horse (String n,String g){ 
     this.name= n;
     this.gender= g;
   }
@@ -69,5 +72,27 @@ public class Exercise_01_10 {
     this.age= a;
   }
   
+  void walk(String dir){
+    if(dir.equalsIgnoreCase("north")) z+=1;
+    if(dir.equalsIgnoreCase("east")) x+=1;
+    if(dir.equalsIgnoreCase("south")) z-=1;
+    if(dir.equalsIgnoreCase("north-east")) z+=1; x+=1;
+    if(dir.equalsIgnoreCase("south-east")) z-=1; x+=1;
+    if(dir.equalsIgnoreCase("south-west")) z-=1; x-=1;
+    if(dir.equalsIgnoreCase("north-west")) z+=1; x-=1;
+  }
+  
+  void neigh (){
+    System.out.println(this.name + " is neighing.");
+  }
+  
+  void jump (){
+    System.out.println(this.name + " has jumped of happiness.");
+  }
+  
+  void currentPos(){
+    System.out.println(this.name +" location: "+ "x:z");
+    System.out.println("                "+  x+ ":"+z);
+  }
   
 }
