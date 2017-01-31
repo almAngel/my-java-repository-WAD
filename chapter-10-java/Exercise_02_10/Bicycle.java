@@ -12,6 +12,7 @@ public class Bicycle extends Vehicle{
   }
   
   public void move(){
+    this.kilometersTravelled=0;
     this.kilometersTravelled+=1;   
     Vehicle.totalKilometers+= this.kilometersTravelled;
     System.out.println("The bicycle moves it's "+ this.wheels + " wheels.");
